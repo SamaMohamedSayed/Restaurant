@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+nav{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.125rem;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+}
+ul{
+    list-style: none;
+}
+ul li {
+    display: inline-block;
+    margin: 20px;
+}
+ul li a{
+    text-decoration: none;
+    color: gainsboro;
+    font-size: 20px;
+}
+ul li a:hover{
+    color:black;
+}
+.logo{
+    font-size: 30px;
+    margin-left: 80px;
+}
+span{
+    color: red;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px;
+    height: 100vh;
+    background-color: gainsboro;
+}
+.img{
+    border-radius:50%;
+    width: 70vh;
+    z-index: 1100000;
+}
+.img:hover{
+    animation: shake 1s infinite;
+}
+.title{
+    font-size: 40px;
+    padding-bottom: 15px;
+}
+
+.description{
+    font-size: 20px;
+    color: rgb(91, 89, 89);
+    padding-bottom: 15px;
+}
+.button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.book{
+    display: flex;
+    align-items: center;
+    background-color: rgb(222, 21, 21);
+    color:white;
+    width:7.2rem;
+    height:2.125rem;
+    justify-content: center;
+    border-radius: 0px 30px 30px 30px;
+}
+.button a{
+    text-decoration: none;
+    color:white;
+}
+.book:hover{
+    background-color: red;
+}
+@keyframes shake {
+    0%{
+        transform: translate(1px ,1px) rotate(0deg);
+    }
+    10%{
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20%{
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30%{
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40%{
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    50%{
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60%{
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70%{
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80%{
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90%{
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+    100%{
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+.chefs{
+    
+    margin-bottom: 45px;
+}
+.chefs .header ,.gallery .header, .contact .header{
+ text-align: center;
+ margin: 30px;
+}
+.chefs .title,.gallery .title, .contact .title{
+    font-size:17px;
+    color: rgb(133, 130, 130);
+    padding-top: 70px;
+}
+.chefs .description , .gallery .description, .contact .description{
+  font-size: 30px;
+}
+.cards{
+    width:85%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.card{
+    overflow: hidden;
+    width:31%;
+    border-radius: 10px;
+    box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.1);
+    text-align: center;  
+    box-sizing: border-box;
+    transition: 0.7s ease;
+}
+.card:hover{
+    transform:scale(1.1);
+}
+.card img{
+    width:100%;
+}
+.card p,h5{
+    color:rgb(134, 134, 134);
+    padding:7px
+}
+.card p{
+    font-style: italic;
+}
+.chef-details{
+    padding:30px;
+}
+.gallery{
+    background-color: gainsboro;
+    height: 180vh;
+}
+.gallery .photos{
+    margin: auto;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap:15px;
+    height: 1170px;
+    
+}
+.photos img{
+   width: 400px;
+   border: 3px solid #fff;
+}
+.contact .box{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:17px;
+    margin-bottom: 30px;
+    
+}
+.contact .address ,.call ,.hours ,.email{
+    background-color: gainsboro;
+    width:40%;
+    height:85px;
+    padding: 15px;
+}
+.contact h3{
+    color:rgb(117, 116, 116);
+    margin-bottom: 8px;
+}
+form{
+    margin: auto;
+    justify-content: center;
+    width:81%;
+    box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.2);
+    padding:20px;
+    margin-bottom: 30px;
+}
+form input,textarea{
+    height: 45px;
+    width: 100%;
+    padding: 6px;
+    margin: 7px;
+    color: gainsboro;
+    border: 2px solid gainsboro;
+    transition: ease ;
+}
+form input:focus,textarea:focus{
+    border-color: red;
+    outline:none;
+}
+form .group{
+    display: flex;
+}
+form textarea{
+    height: 150px; 
+}
+form .button{
+    background-color: rgb(222, 21, 21);
+    color:white;
+    width: 150px;
+    height: 50px;
+    border-radius: 30px 30px 30px 30px;
+    justify-content: center;
+    margin: auto;
+}
+form .button:hover{
+    background-color: red;
+}
